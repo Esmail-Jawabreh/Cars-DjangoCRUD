@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+
+{% block title %}Cars{% endblock title %}
+
+{% block content %}
+
+<h2>Car: {{ cars.name }}</h2>
+<h2>Purchaser: {{ cars.purchaser.username }}</h2>
+<p>{{ cars.desc }}</p>
+<a href="{% url 'cars_update' cars.pk %}">+ Update car</a>
+<a href="{% url 'cars_delete' cars.pk %}">+ Delete car</a>
+
+{% endblock content %}

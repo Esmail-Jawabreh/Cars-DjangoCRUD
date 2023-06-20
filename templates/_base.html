@@ -9,7 +9,7 @@
   <title>{% block title %}DjangoX{% endblock title %}</title>
   <meta name="description" content="A framework for launching new Django projects quickly.">
   <meta name="author" content="">
-  <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/Cars_logo.png' %}">
 
   {% block css %}
   <!-- Bootstrap CSS -->
@@ -31,8 +31,9 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="{% url 'home' %}" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="{% url 'about' %}" class="nav-link px-2 link-dark">About</a></li>
+          <li><a href="{% url 'home' %}" class="nav-link px-2 link-dark">Home</a></li>
+          <li><a href="{% url 'cars_list' %}" class="nav-link px-2 link-secondary">Cars</a></li>
+          <li><a href="{% url 'about' %}" class="nav-link px-2 link-secondary">About</a></li>
         </ul>
 
         <div class="dropdown text-end">
@@ -67,7 +68,7 @@
 
   <footer class="footer">
     <div class="container">
-      <span class="text-muted">Footer...</span>
+      <span class="text-muted">@ 2023 EsmailJawabreh@Gmail.com | All Rights Reserved. </span>
     </div>
   </footer>
 
