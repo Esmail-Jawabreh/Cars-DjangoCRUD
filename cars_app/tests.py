@@ -17,9 +17,7 @@ class CarsTests(TestCase):
         url = reverse("cars_list")
         response = self.client.get(url)
         self.assertTemplateUsed(response, "cars/cars-list.html")
-        self.assertTemplateUsed(
-            response, "_base.html"
-        ) 
+        self.assertTemplateUsed(response, "_base.html")
 
     def setUp(self):
         self.user = get_user_model().objects.create_user(
